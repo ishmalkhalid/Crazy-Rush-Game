@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" 
+      
+      integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
+      
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer">
+      
+    </script>
+
+    <!-- the p5 sound library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js" integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="sketch.js"></script>
+    <!-- styles -->
+    <style type="text/css">
+
+      #center {
+        position: absolute;
+        width: 400px;
+        height: 500px;
+        top: 50%;
+        left: 50%;
+        margin-left: -200px;
+        margin-top: -228px;
+        padding: 0;
+        /*border: 5px solid black;*/
+      }
+
+      .butt {
+        background-color: rgb(255, 204, 102);
+      }
+
+    </style>
+  </head>
+  
+  <body style="background-color: #003366; color: white;">
+
+    <div style="text-align: center; padding-top: 8px; padding-bottom: 0; margin: 0">
+        <!-- Buttons to pause, resume, restart -->
+    <button class="butt" onclick="pauseGame();"><b> Pause</b></button>
+    <button class="butt" onclick="resumeGame();"><b>Resume</b></button>
+    <button class="butt" onclick="restartGame();"><b>Restart</b></button>
+
+    </div>
+
+    <div id = "center">
+    </div>
+    <!-- instructions on how to play -->
+    <div  style="padding-top: 2px; padding-bottom: 20;position: absolute; top: 540px; width:100%;text-align: center;">
+        <h1><u>HOW TO PLAY</u></h1>
+    </div>
+
+        <p style="padding-top: 2px; padding-bottom: 20px ;position: absolute; top: 790px;text-align: center;">
+
+    <div style=" position: absolute; top: 600px; padding-top: 20px; width:100%;">
+      <div style = "text-align: center;">
+        <p>Select your mode from "Easy" or "Hard" by clicking on any.</p>
+        <p>Control the car using W, A, S and D.</p>
+        <p>Avoid the incoming and the outgoing traffic. But don't forget you get more points for driving on the wrong side of the road!</p>
+        <p>Collect as many coins as you can as they boost your score by a 100.</p>
+        <p>Happy Driving!</p>
+      </div>
+    </div>
+
+    <!-- game inspiration -->
+    <div  style="padding-top: 2px; padding-bottom: 20;position: absolute; top: 800px; width: 100%;">
+        <h1 style = "text-align: center;"><u >GAME INSPIRATION</u></h1>
+    </div>
+
+    <p style="padding-top: 2px; padding-bottom: 20px ;position: absolute; top: 870px;text-align: center; margin-left:10%; margin-right: 10%;">
+      The inspiration for this game came from games such as "Subway Surfers" and "Temple Run" which were some of my favorite games to play as a kid. I used to spend hours trying to break my own high ccore and show-off my scores to my friends.
+      <br>
+      <br>
+
+      Now when I have been introduced to the realm of game development, this was the game I wanted to start off with. The theme of car racing was chosen not only because it suits a diverse set of audience but I absolutely love driving myself (especially on fast speeds!).
+
+      <br>
+      <br>
+
+      I hope to soon develop this game further by adding power-ups, radio, landmarks, horn, fuel and maybe even the ability to jump over other cars which will make the game much more interesting and perhaps also more difficult!
+
+    </p>
+
+  </body>
+</html>
